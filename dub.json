@@ -1,0 +1,13 @@
+{
+	"name": "vibed-fibonacci",
+	"authors": [
+		"dimamon"
+	],
+	"dependencies": {
+		"vibe-d": "~>0.8.2"
+	},
+	"description": "A simple vibe.d server application that can be used in docker.",
+	"license": "GPL-2.0",
+	"targetName": "app",
+	"targetPath": "Docker"
+}

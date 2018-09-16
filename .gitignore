@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+webserver_v2.so
+webserver_v2.dylib
+webserver_v2.dll
+webserver_v2.a
+webserver_v2.lib
+webserver_v2-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*.idea
