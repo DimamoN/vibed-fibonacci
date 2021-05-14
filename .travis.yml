@@ -1,5 +1,5 @@
 language: d
-d: dmd-2.077
+d: dmd-2.077.1
 
 stages:
   - build
