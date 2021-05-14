@@ -1,0 +1,18 @@
+language: d
+d:
+  - dmd
+
+stages:
+  - build
+  - docker  
+
+jobs:
+  include:
+    - stage: build
+      name: "Build the project"
+      script: 
+        - dub build
+    - stage: docker
+      name: "Dockerize the app"
+      script: 
+        - docker build -t vibed-app .
