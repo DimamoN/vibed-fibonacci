@@ -1,7 +1,8 @@
 language: d
-script:
-  - dub build
   
+script: 
+  - dub build
+
 # stages:
 #   - build
 #   - docker  
