@@ -1,19 +1,17 @@
 language: d
-  
-script: 
-  - dub build
+d: dmd-2.077
 
-# stages:
-#   - build
-#   - docker  
+stages:
+  - build
+  - docker  
 
-# jobs:
-#   include:
-#     - stage: build
-#       name: "Build the project"
-#       script: 
-#         - dub build
-#     - stage: docker
-#       name: "Dockerize the app"
-#       script: 
-#         - docker build -t vibed-app .
+jobs:
+  include:
+    - stage: build
+      name: "Build the project"
+      script: 
+        - dub build
+    - stage: docker
+      name: "Dockerize the app"
+      script: 
+        - docker build -t vibed-app .
